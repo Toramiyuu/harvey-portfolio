@@ -45,7 +45,8 @@ Built natively for macOS, NookClone sits in your menu bar and expands on demand.
       '/projects/nookclone/screen-system.png',
       '/projects/nookclone/screen-context.png',
     ],
-    downloadUrl: '#',
+    downloadUrl: 'https://github.com/Toramiyuu/NookClone/releases/download/v1.0.0/NookClone.zip',
+    githubUrl: 'https://github.com/Toramiyuu/NookClone',
     changelog: [
       {
         version: '1.0.0',
