@@ -39,6 +39,7 @@ Built with React 19, Socket.io, and HTML Canvas using a two-layer rendering arch
 - In-memory board state synced via Socket.io`,
     thumbnail: '',
     screenshots: [],
+    siteUrl: 'https://collab-whiteboard-client-mmv5.vercel.app',
     githubUrl: 'https://github.com/Toramiyuu/CollabWhiteboard',
     changelog: [
       {
