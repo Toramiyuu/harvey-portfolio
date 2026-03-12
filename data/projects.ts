@@ -105,6 +105,15 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
       {
+        version: '1.1.1',
+        date: '2026-03-12',
+        changes: [
+          'Fixed tab click hit area — full padded region now responds to clicks',
+          'Improved unselected tab label visibility (larger font, higher opacity)',
+          'Restored hover-to-expand and auto-collapse on mouse leave',
+        ],
+      },
+      {
         version: '1.1.0',
         date: '2026-03-12',
         changes: [
