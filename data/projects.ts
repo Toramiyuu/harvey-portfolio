@@ -63,21 +63,19 @@ Built with React 19, Socket.io, and HTML Canvas using a two-layer rendering arch
     slug: 'nookclone',
     name: 'NookClone',
     platform: 'macOS',
-    tagline: 'A notch panel for macOS with widgets',
-    description: `NookClone turns your MacBook's notch into a productive hub. Hover over the notch to reveal a sleek panel packed with widgets — media controls, weather, system stats, clipboard history, and more.
+    tagline: 'A Dynamic Island-style notch panel for macOS',
+    description: `NookClone turns your MacBook's notch into a productive hub. When music plays, the notch expands into a Dynamic Island-style live pill — album art on the left, animated spectrograph on the right. Hover to reveal the full panel packed with widgets.
 
-Built natively for macOS, NookClone sits in your menu bar and expands on demand. It respects your workflow: collapse it to stay focused, expand it when you need quick access to information without switching apps.
+Built natively for macOS using SwiftUI and AppKit. Sits in your menu bar and expands on demand without stealing focus from your current app.
 
 **Features:**
-- Media widget with Spotify artwork and playback controls
+- Live notch pill — expands from the notch when music plays (album art + spectrograph)
+- Media widget with Apple Music & Spotify controls and album artwork
+- Clipboard history manager with one-click paste and image preview
+- Bluetooth device list with battery levels
 - Live weather with manual city override
-- System monitor (CPU, RAM, network)
-- Clipboard history manager
-- Todo list widget
-- Bluetooth device manager
-- Shortcuts launcher
-- Mirror display widget
-- Global keyboard shortcut (Option+N) to show/hide
+- Calendar today view via EventKit
+- Global keyboard shortcut (Option+N) to toggle the panel
 - Adaptive panel height per widget
 - Persistent tab selection across sessions`,
     thumbnail: '/projects/nookclone/screen-system.png',
@@ -85,9 +83,23 @@ Built natively for macOS, NookClone sits in your menu bar and expands on demand.
       '/projects/nookclone/screen-system.png',
       '/projects/nookclone/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/NookClone/releases/download/v1.0.0/NookClone.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/NookClone/releases/download/v1.1.0/NookClone.zip',
     githubUrl: 'https://github.com/Toramiyuu/NookClone',
     changelog: [
+      {
+        version: '1.1.0',
+        date: '2026-03-12',
+        changes: [
+          'Live notch pill — notch widens when music plays to show album art and animated spectrograph',
+          'Flat-top UnevenRoundedRectangle shape merges seamlessly with the physical notch',
+          'Fixed panel buttons requiring two clicks — switched to NSPanel with nonactivatingPanel',
+          'Fixed audio loopback/bass-boost caused by AVAudioEngine microphone tap',
+          'Fixed Bluetooth widget crash on macOS 15 before permission is granted',
+          'Increased default widget panel height for better content layout',
+          'Clipboard history now scrolls to fill the full panel height',
+          'Panel stays open while the user is actively clicking',
+        ],
+      },
       {
         version: '1.0.0',
         date: '2026-03-09',
