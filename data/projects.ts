@@ -60,11 +60,11 @@ Built with React 19, Socket.io, and HTML Canvas using a two-layer rendering arch
     ],
   },
   {
-    slug: 'nookclone',
-    name: 'NookClone',
+    slug: 'notchly',
+    name: 'Notchly',
     platform: 'macOS',
     tagline: 'A Dynamic Island-style notch panel for macOS',
-    description: `NookClone turns your MacBook's notch into a productive hub. When music plays, the notch expands into a Dynamic Island-style live pill — album art on the left, animated spectrograph on the right. Hover to reveal the full panel packed with widgets.
+    description: `Notchly turns your MacBook's notch into a productive hub. When music plays, the notch expands into a Dynamic Island-style live pill — album art on the left, animated spectrograph on the right. Hover to reveal the full panel packed with widgets.
 
 Built natively for macOS using SwiftUI and AppKit. Sits in your menu bar and expands on demand without stealing focus from your current app.
 
@@ -78,13 +78,13 @@ Built natively for macOS using SwiftUI and AppKit. Sits in your menu bar and exp
 - Global keyboard shortcut (Option+N) to toggle the panel
 - Adaptive panel height per widget
 - Persistent tab selection across sessions`,
-    thumbnail: '/projects/nookclone/screen-system.png',
+    thumbnail: '/projects/notchly/screen-system.png',
     screenshots: [
-      '/projects/nookclone/screen-system.png',
-      '/projects/nookclone/screen-context.png',
+      '/projects/notchly/screen-system.png',
+      '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/NookClone/releases/download/v1.1.0/NookClone.zip',
-    githubUrl: 'https://github.com/Toramiyuu/NookClone',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.1.0/Notchly.zip',
+    githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
       {
         version: '1.1.0',
