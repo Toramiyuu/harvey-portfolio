@@ -72,12 +72,30 @@ Built natively for macOS using SwiftUI and AppKit. Sits in your menu bar and exp
 - Live notch pill — expands from the notch when music plays (album art + spectrograph)
 - Media widget with Apple Music & Spotify controls and album artwork
 - Clipboard history manager with one-click paste and image preview
-- Bluetooth device list with battery levels
+- Bluetooth device manager with battery levels
 - Live weather with manual city override
 - Calendar today view via EventKit
+- Custom volume & brightness HUD replacing the system overlay
 - Global keyboard shortcut (Option+N) to toggle the panel
 - Adaptive panel height per widget
-- Persistent tab selection across sessions`,
+
+---
+
+## How to Install
+
+1. Click **Download** above to get \`Notchly.zip\`
+2. Unzip it and drag **Notchly.app** to your Applications folder
+3. Open Notchly — macOS may show a security warning on first launch
+4. If blocked, go to **System Settings → Privacy & Security** and click **Open Anyway**
+5. Grant permissions as prompted:
+   - **Accessibility** — required for the custom volume/brightness HUD
+   - **Apple Music / Spotify** — for now-playing info and controls
+   - **Calendar** — for the calendar widget
+   - **Bluetooth** — for the Bluetooth device list
+
+Once running, Notchly lives in your menu bar. Hover over the notch to open the panel, or press **Option+N** from anywhere.
+
+> **Requirements:** macOS 14 Sonoma or later · MacBook with notch recommended`,
     thumbnail: '/projects/notchly/screen-system.png',
     screenshots: [
       '/projects/notchly/screen-system.png',
