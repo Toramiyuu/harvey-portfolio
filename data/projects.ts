@@ -20,6 +20,66 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: 'cornerstone',
+    name: 'Cornerstone',
+    platform: 'macOS',
+    tagline: 'Hot corners, reimagined — instant widgets at every edge of your screen',
+    description: `Cornerstone puts your most-used tools one mouse flick away. Hover any corner of your screen and a floating panel appears with a widget — clipboard history, a scientific calculator, rich-text notes, or recent files. Move away and it vanishes.
+
+Built natively for macOS using SwiftUI and AppKit. Runs as a menu bar agent with no Dock icon, and integrates with the system at a low level for instant response.
+
+**Features:**
+- Four assignable corners — map any widget to any corner
+- Per-corner dwell delay — set how long you need to hover before the popup fires
+- Global hotkeys — open any corner's widget from the keyboard, no mouse needed
+- Resizable panels — drag to resize, size is remembered per widget
+- Clipboard history — searchable list of recent copied items, click to paste
+- Scientific calculator — Casio FX-570EX style with trig, logs, memory, and constants
+- Rich-text notes — bold, italic, underline, strikethrough, text alignment, auto-saved
+- Recent files — quick-open documents from any app via macOS recents API
+- Corner indicators — subtle bracket UI in each corner shows the assigned widget on hover
+- Completely menu-bar driven — no Dock icon, no interruptions`,
+    thumbnail: '',
+    screenshots: [],
+    githubUrl: 'https://github.com/Toramiyuu/Cornerstone',
+    changelog: [
+      {
+        version: '1.2.0',
+        date: '2026-03-13',
+        changes: [
+          'Per-corner dwell delay — each corner can have its own hover duration',
+          'Global hotkeys — register a keyboard shortcut to open any corner widget',
+          'Resizable panels — drag the bottom-right handle to resize; size persists per widget',
+          'Shortcut recorder UI in menu bar settings with modifier symbol display',
+        ],
+      },
+      {
+        version: '1.1.0',
+        date: '2026-03-12',
+        changes: [
+          'Rich text formatting toolbar in Notes — bold, italic, underline, strikethrough, alignment',
+          'Cmd+B/I/U/Shift+U keyboard shortcuts for formatting in Notes',
+          'Casio FX-570EX scientific calculator with trig, log, memory, and physical constants',
+          'Corner indicator UI — hover brackets show assigned widget in each screen corner',
+          'Fixed keyboard input in popup panel using KeyablePanel subclass',
+        ],
+      },
+      {
+        version: '1.0.0',
+        date: '2026-03-10',
+        changes: [
+          'Hot corner detection with configurable dwell timer',
+          'Floating borderless panel with fade-in animation',
+          'Click-outside and mouse-leave dismiss with 100ms debounce',
+          'Clipboard history widget with 20-item rolling history',
+          'Notes widget with auto-save to Application Support',
+          'Recent Files widget via NSDocumentController',
+          'Menu bar settings for corner-to-widget assignments and dwell delay',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'collabwhiteboard',
     name: 'CollabWhiteboard',
     platform: 'Web',
