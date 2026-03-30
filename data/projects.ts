@@ -161,9 +161,25 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.1.0/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.2.0/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.2.0',
+        date: '2026-03-30',
+        changes: [
+          'Fixed panel not opening when any app is in foreground on macOS 15+ — replaced AXFullScreen with CGWindowList-based fullscreen detection',
+          'CGEventTap crash recovery — automatic re-enable on timeout plus 5-second watchdog timer prevents silent HUD death',
+          'Drop area items now persist to disk across app restarts',
+          'Clipboard images stored as individual PNG files instead of inline data — prevents JSON bloat',
+          'Shortcuts execution now has a 30-second timeout to prevent hung processes',
+          'HUD overlay no longer appears simultaneously in both notch pill and floating window',
+          'Added Bluetooth device icons for Imaging, Wearable, and Toy device classes',
+          'About view now displays the actual app icon instead of a generic placeholder',
+          'Removed dead code (NotchHoverController) and duplicate Xcode project file',
+          'Fixed stale CPU usage readings after host_processor_info failures',
+        ],
+      },
       {
         version: '1.1.1',
         date: '2026-03-12',
