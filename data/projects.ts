@@ -163,9 +163,17 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.2/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.3/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.3.3',
+        date: '2026-04-03',
+        changes: [
+          'Fixed NSAttributedString HTML entity decoding running off main thread — could cause crashes when parsing RSS news headlines',
+          'Moved clipboard image PNG conversion and disk write off main thread — prevents UI freezes when copying large images',
+        ],
+      },
       {
         version: '1.3.2',
         date: '2026-04-03',
