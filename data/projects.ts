@@ -163,9 +163,19 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.1/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.2/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.3.2',
+        date: '2026-04-03',
+        changes: [
+          'Fixed NSAppleScript running off main thread — could cause crashes during Music/Spotify playback control',
+          'News headlines now properly decode HTML entities (&amp;, &quot;, etc.)',
+          'Weather location error now shows a direct link to open Location Settings',
+          'Bookmark favicons now fetch with a 5-second timeout instead of blocking indefinitely',
+        ],
+      },
       {
         version: '1.3.1',
         date: '2026-04-03',
