@@ -163,9 +163,17 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.3/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.4/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.3.4',
+        date: '2026-04-03',
+        changes: [
+          'Fixed data race on artwork cache in MediaManager — background refresh thread and URLSession completion could concurrently access the cache; now serialised through a dedicated queue',
+          'Added 10-second timeout to shortcuts list process — previously had no timeout and could block a background thread indefinitely',
+        ],
+      },
       {
         version: '1.3.3',
         date: '2026-04-03',
