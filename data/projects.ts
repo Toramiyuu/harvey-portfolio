@@ -163,9 +163,16 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.0/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.1/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.3.1',
+        date: '2026-04-03',
+        changes: [
+          'Fixed visual artifacts at the bottom corners of the expanded panel',
+        ],
+      },
       {
         version: '1.3.0',
         date: '2026-04-03',
