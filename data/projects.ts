@@ -131,6 +131,8 @@ Built natively for macOS using SwiftUI and AppKit. Sits in your menu bar and exp
 **Features:**
 - Live notch pill — expands from the notch when music plays (album art + spectrograph)
 - Media widget with Apple Music & Spotify controls and album artwork
+- Bookmarks widget — one-click to open any URL in your browser, with auto-fetched favicons
+- News widget — live RSS headlines from BBC, Hacker News, The Verge, TechCrunch and more
 - Clipboard history manager with one-click paste and image preview
 - Bluetooth device manager with battery levels
 - Live weather with manual city override
@@ -161,9 +163,18 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.2.0/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.0/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.3.0',
+        date: '2026-04-03',
+        changes: [
+          'New Bookmarks widget — grid of one-click buttons to open URLs in your browser, with auto-fetched favicons',
+          'New News widget — live RSS headlines from BBC, Hacker News, The Verge, TechCrunch, Reuters, and Ars Technica',
+          'Fixed weather location permission — macOS was silently ignoring the request due to a missing plist key',
+        ],
+      },
       {
         version: '1.2.0',
         date: '2026-03-30',
