@@ -163,9 +163,17 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.3.4/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.4.0/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.4.0',
+        date: '2026-04-07',
+        changes: [
+          'In-panel settings gear — click ⚙ in the expanded panel to enable/disable widgets without opening Settings',
+          'Fixed notch not opening when any app other than Finder was in focus — fullscreen detection was incorrectly hiding the panel for Chrome, Teams, Word, and other apps',
+        ],
+      },
       {
         version: '1.3.4',
         date: '2026-04-03',
