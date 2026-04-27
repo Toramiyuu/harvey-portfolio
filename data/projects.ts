@@ -133,13 +133,17 @@ Built natively for macOS using SwiftUI and AppKit. Sits in your menu bar and exp
 - Media widget with Apple Music & Spotify controls and album artwork
 - Bookmarks widget — one-click to open any URL in your browser, with auto-fetched favicons
 - News widget — live RSS headlines from BBC, Hacker News, The Verge, TechCrunch and more
-- Clipboard history manager with one-click paste and image preview
+- Clipboard history with search, pinned items, and one-click paste
+- Interactive media seek bar with elapsed/remaining time
+- Weather widget with humidity and feels-like temperature
+- News widget with custom RSS feed support
+- Calendar auto-refreshes at midnight
+- Todo widget with inline "Clear completed" button
 - Bluetooth device manager with battery levels
-- Live weather with manual city override
-- Calendar today view via EventKit
 - Custom volume & brightness HUD replacing the system overlay
 - Global keyboard shortcut (Option+N) to toggle the panel
-- Adaptive panel height per widget
+- Escape key to collapse the panel
+- Auto-updates via Sparkle
 
 ---
 
@@ -163,9 +167,28 @@ Once running, Notchly lives in your menu bar. Hover over the notch to open the p
       '/projects/notchly/screen-system.png',
       '/projects/notchly/screen-context.png',
     ],
-    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.4.0/Notchly.zip',
+    downloadUrl: 'https://github.com/Toramiyuu/Notchly/releases/download/v1.5.0/Notchly.zip',
     githubUrl: 'https://github.com/Toramiyuu/Notchly',
     changelog: [
+      {
+        version: '1.5.0',
+        date: '2026-04-27',
+        changes: [
+          'Auto-updates via Sparkle — Notchly now checks for updates on launch and prompts when a new version is available',
+          'Clipboard search — filter history by typing in the search bar',
+          'Clipboard pinned items — pin entries so they stay at the top and are never evicted',
+          'Interactive media seek bar — drag to seek, with elapsed and remaining time labels',
+          'Weather humidity and feels-like temperature',
+          'News custom RSS feed — enter any feed URL in News settings',
+          'Calendar date header refreshes automatically at midnight',
+          'Todo: inline "Clear N completed" button',
+          'In-panel settings gear — enable/disable widgets without opening Settings',
+          'Escape key collapses the panel',
+          'Fixed: marquee text resets scroll position when track changes',
+          'Fixed: fullscreen detection false positives',
+          'Fixed: artwork cache data race in MediaManager',
+        ],
+      },
       {
         version: '1.4.0',
         date: '2026-04-07',
